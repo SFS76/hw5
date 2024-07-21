@@ -15,6 +15,7 @@ public class Main {
             default:
                 System.out.println("Признак OS вне диапазона");
         }
+
         //task2
         byte clientOS2 = 0;
         int phoneYear = 2015;
@@ -37,21 +38,22 @@ public class Main {
                 System.out.println("Признак OS вне диапазона");
         }
 
+        //task3
+        int year = 1700;
+        boolean year4 = year % 4 == 0;
+        boolean year100 = year % 100 != 0;
+        boolean year400 = year % 400 == 0;
+            if (year >= 1584) {
+                if (year100 && year4 || year400) {
+                    System.out.println(year + " год является високосным");
+                } else {
+                    System.out.println(year + " год НЕ является високосным");
+                }
+            } else{
+                    System.out.println(year + " год високосность не определели");
+                }
+
         //task4
-        float age2 = 30;
-        if (age2 >= 2 && age2 < 7) {
-            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
-        }
-        if (age2 >= 7 && age2 < 18) {
-            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
-        }
-        if (age2 >= 18 && age2 < 24) {
-            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в университет");
-        }
-        if (age2 >= 24) {
-            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить на работу");
-        }
-        //task5
         float age3 = 13;
         if (age3 < 5) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе");
