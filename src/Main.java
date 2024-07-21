@@ -54,17 +54,15 @@ public class Main {
                 }
 
         //task4
-        float age3 = 13;
-        if (age3 < 5) {
-            System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе");
+        int deliveryDistance = 95;
+        byte deliveryDay = (byte) (1 + (deliveryDistance + 20) / 40f);
+        if (deliveryDistance < 100) {
+            System.out.println ("Потребуется дней: " + deliveryDay);
+        } else {
+            System.out.println ("Доставка не осуществляется!");
         }
-        if (age3 >= 5 && age3 < 14) {
-            System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-        }
-        if (age3 >= 14) {
-            System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
-        }
-        //task6
+
+        //task5
         int passengers = 50;
         int allPlace = 102;
         int sitePlace = 60;
