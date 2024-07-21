@@ -63,28 +63,26 @@ public class Main {
         }
 
         //task5
-        int passengers = 50;
-        int allPlace = 102;
-        int sitePlace = 60;
-        if (passengers > allPlace) {
-            System.out.println("Вагон полностью забит");
-        } else
-        if (passengers < allPlace && passengers >= sitePlace) {
-            System.out.println("В вагоне осталось " + (allPlace - passengers) + " стоячих мест");
-        } else {
-            System.out.println("В вагоне осталось " + (sitePlace - passengers) + " сидячих мест и 42 стоячих места");
-        }
-        //task7
-        int one = 150;
-        int two = 102;
-        int three = 160;
-        if (one > two && one > three) {
-            System.out.println("Первое число максимальное");
-        } else
-        if (two > one && two > three) {
-            System.out.println("Второе число максимальное");
-        } else {
-            System.out.println("Третье число максимальное");
+        byte month = 13;
+        //if (month < 1 || month > 12) {
+        //    System.out.println ("Значение месяца за пределом допустимого диапазона!");
+        //} else {
+        switch (month) {
+            case 1, 2, 12:
+                System.out.println("Это зимний месяц");
+                break;
+            case 3, 4, 5:
+                System.out.println("Это весенний месяц");
+                break;
+            case 6, 7, 8:
+                System.out.println("Это летний месяц");
+                break;
+            case 9, 10, 11:
+                System.out.println("Это осенний месяц");
+                break;
+            default:
+                System.out.println("Значение месяца за пределом допустимого диапазона!");
+            //}
         }
     }
 }
