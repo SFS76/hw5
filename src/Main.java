@@ -4,27 +4,39 @@ public class Main {
     public static void main(String[] args)
     {
         //task1
-        int age = 48;
-        if (age < 18) {
-            System.out.println("Если возраст человека равен " + age +", то он не достиг совершеннолетия, нужно немного подождать");
-        } else {
-            System.out.println("Если возраст человека равен " + age +", то он совершеннолетний");
+        byte clientOS = 2;
+        switch (clientOS) {
+            case 0:
+                System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 1:
+                System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("Признак OS вне диапазона");
         }
         //task2
-        float teperature = 4;
-        if (teperature < 5) {
-            System.out.println("На улице холодно, нужно надеть шапку");
+        byte clientOS2 = 0;
+        int phoneYear = 2015;
+        switch (clientOS2) {
+            case 0:
+                if (phoneYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                }
+                break;
+            case 1:
+                if (phoneYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                } else {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                }
+                break;
+            default:
+                System.out.println("Признак OS вне диапазона");
         }
-        if (teperature > 5)
-        {System.out.println("Сегодня тепло, можно идти без шапки");
-        }
-        //task3
-        float speed = 60;
-        if (speed > 60) {
-            System.out.println("Если скорость " + speed + " км/ч, то придется платить штраф");
-        } else { System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
 
-        }
         //task4
         float age2 = 30;
         if (age2 >= 2 && age2 < 7) {
