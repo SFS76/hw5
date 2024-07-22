@@ -4,39 +4,40 @@ public class Main {
     public static void main(String[] args)
     {
         //task1
-        byte clientOS = 2;
-        switch (clientOS) {
-            case 0:
-                System.out.println("Установите версию приложения для iOS по ссылке");
-                break;
-            case 1:
-                System.out.println("Установите версию приложения для Android по ссылке");
-                break;
-            default:
-                System.out.println("Признак OS вне диапазона");
+        byte clientOS = 0;
+        if (clientOS < 0 || clientOS > 1) {
+            System.out.println ("Признак OS вне диапазона");
+        } else
+            {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    break;
+                default:
+                    System.out.println("Установите версию приложения для Android по ссылке");
+            }
         }
 
         //task2
-        byte clientOS2 = 0;
+        byte clientOS2 = 1;
         int phoneYear = 2015;
-        switch (clientOS2) {
-            case 0:
-                if (phoneYear < 2015) {
-                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        if (clientOS2 =0 && phoneYear > 2015) {
+            System.out.println ("Признак OS вне диапазона");
+            } else if (clientOS2 == 0) {
+                    if (phoneYear < 2015) {
+                        System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                    } else {
+                        System.out.println("Установите версию приложения для iOS по ссылке");
+                    }
                 } else {
-                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    if (phoneYear < 2015) {
+                        System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    } else {
+                        System.out.println("Установите версию приложения для Android по ссылке");
+                    }
                 }
-                break;
-            case 1:
-                if (phoneYear < 2015) {
-                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
-                } else {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                }
-                break;
-            default:
-                System.out.println("Признак OS вне диапазона");
-        }
+            }
+
 
         //task3
         int year = 1700;
